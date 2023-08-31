@@ -1,0 +1,351 @@
+/* Global Styles */
+body {
+  font-family: Caudex, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #f2f2f2;
+ } 
+
+
+/* Hero Section Background Image */
+#home {
+  background-image: url('home-bg.jpg'); /* Replace 'your-image.jpg' with your image file path */
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  display: block;
+}
+
+  /* Header Styles */
+.intro-text {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Name and Role */
+.name {
+  font-family: "Quicksand", sans-serif;
+  font-size: 76px;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.role {
+  font-size: 76px;
+  color: #purple;
+}
+
+/* Subtitle */
+.subtitle {
+  font-size: 60px;
+  color: purple;
+  line-height: 1.1;
+  padding: 10px;
+  text-align: center;
+  letter-spacing: -0.5px;
+}
+
+/* Add a class to target the hero text and subtitle */
+.hero-text {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 3s ease forwards;
+}
+
+/* Define the fadeIn animation */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Contact Section */
+.custom-contact-section {
+  background-color: #008080;
+  padding: 50px 0;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.custom-contact-section a {
+  color: #99ff33;
+}
+
+.custom-contact-section i{
+  margin-top: 40px;
+  color: limegreen;
+}
+
+/* Footer Section */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  display: block;
+}
+
+.footer p {
+  margin: 0;
+}
+
+/* Center the About Us title */
+h1.text-center {
+    text-align: center;
+}
+
+/* Set flex properties for the sections */
+.image-slider {
+    flex: 1;
+}
+
+.event-boxes {
+    flex: 1;
+}
+
+/* Style the event boxes */
+.event-box {
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.event-box i {
+    font-size: 24px;
+    color: #007bff; /* Blue color, you can change this */
+}
+
+.event-box h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.event-box p {
+    font-size: 14px;
+    color: #333;
+}
+
+#about-us {
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+/* Ministries Section */
+.ministries-section {
+  background-color: #008080; /* Change to your desired background color */
+  padding: 50px 0;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  display: block;
+}
+
+/* Center the project cards */
+.ministries-section .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Change the background color of the project cards */
+.ministries-section .ministries-card {
+  background-color: #e6e6e6; /* Change to your desired card background color */
+  margin: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  height: 300px; /* Adjust height as needed */
+  perspective: 1000px;
+  position: relative;
+}
+
+.ministries-section .card-front,
+.ministries-section .card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: transform 0.5s;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.ministries-section .card-front {
+  background-color: #f0f0f0; /* Add your background color */
+}
+
+.ministries-section .card-back {
+  background-color: #6dffff; /* Add your background color */
+  transform: rotateY(180deg);
+}
+
+.ministries-section .ministries-card:hover .card-front {
+  transform: rotateY(180deg);
+}
+
+.ministries-section .ministries-card:hover .card-back {
+  transform: rotateY(0deg);
+}
+
+.ministries-section .card-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.ministries-section .btn-primary {
+  background-color: #007bff; /* Customize your button color */
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+.ministries-section .btn-primary:hover {
+  background-color: #0056b3; /* Change the hover color */
+}
+
+/* Change the background color of the entire section */
+.ministries-section h2 {
+  color: #fff; /* Change to your desired text color */
+  text-align: center;
+  margin-bottom: 5px;
+  margin-top: 50px;
+}
+
+/* Change the background color of the entire section */
+.ministries-section p {
+  color: #666; /* Change to your desired text color */
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+/* Change the background color of the entire section */
+.ministries-section h5 {
+  color: #666; /* Change to your desired text color */
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+
+/* Custom CSS for Sermon Cards */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    color: #555;
+    font-size: 0.875rem;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* CSS for Fullscreen Hero Section */
+.fullscreen-hero {
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    background-image: url('your-hero-background.jpg'); /* Add your hero background image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero-text {
+    font-size: 3rem; /* Customize the title font size */
+    margin-top: 20px; /* Add spacing above the title */
+}
+
+/* Additional styling for the text, you can customize as needed */
+.intro-text {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle text shadow for readability */
+}
+
+
+/* CSS file (styles.css) */
+
+  #about-us {
+  background-image: url('splash.jpg'); /* Replace 'your-image.jpg' with your image file path */
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  display: block;
+}
+
+  /* Header Styles */
+
+.intro-text {
+  text-align: center; /* Center-align the text horizontally */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Make sure the text takes up the full height of the hero section */
+}
+
+
+.about-us-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #008080;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.team-member {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+}
+
+.team-member img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+.title {
+    font-size: 14px;
+    color: #666;
+}
